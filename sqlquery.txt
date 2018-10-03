@@ -1,0 +1,10 @@
+create database yodlee_db;
+
+use yodlee_db;
+
+CREATE TABLE yodlee_user (
+  id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  name VARCHAR(45) NOT NULL,
+  password VARCHAR(45) NOT NULL,
+  PRIMARY KEY (id)
+);
