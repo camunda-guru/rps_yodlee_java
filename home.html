@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+table
+{
+width:50%;
+margin-left:25%;
+}
+tr:nth-child(2n+1) {
+background-color: lime;
+color:black;	
+}
+th
+{
+text-align:left;
+}
+
+</style>
+</head>
+<body>
+  <table>
+  <tr>
+  <th>
+  Flight Code
+  </th>
+  <th>
+  Service Provider
+  </th>
+  <th>
+  Capacity
+  </th>
+  </tr>
+ 
+                 <tr th:each="flight : ${flightList}">
+                    <td th:text="${flight.flightCode}"></td>
+                    <td th:text="${flight.serviceProvider}"></td>
+                    <td th:text="${flight.capacity}"></td>                   
+                    
+                </tr>
+         
+  
+  </table>
+
+</body>
+</html>
